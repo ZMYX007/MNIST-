@@ -1,3 +1,4 @@
+import torch
 DATA_ROOT = "./data"
 BATCH_SIZE = 64
 EPOCH_NUM = 3
