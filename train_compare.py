@@ -29,7 +29,7 @@ class MNISTCNN(nn.Module):
         x = self.pool(self.relu(self.conv2(x)))
         x = torch.flatten(x, 1)
         x = self.relu(self.fc1(x))
-        return self.fc2
+        return self.fc2(x)
 
 def plot_confusion_matrix(y_true, y_pred, classes):
     cm = confusion_matrix(y_true, y_pred)
