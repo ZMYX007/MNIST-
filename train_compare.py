@@ -135,6 +135,7 @@ def load_demo():
 if __name__ == "__main__":
     for learning_rate in LR_LIST:
         run_single_lr(learning_rate)
+    # 取消注释即可运行演示加载模型
     # load_demo()
     print(f"\n所有学习率实验完成！启动tensorboard命令：")
     print(f"tensorboard --logdir={TB_LOG_ROOT}") 
